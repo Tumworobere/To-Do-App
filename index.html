@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do-Lists</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/acc40c9880.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="back">
+        <i class="fa-solid fa-arrow-left-long long"></i>
+        <p>Back to lists</p>
+      </div>
+      <div class="todayDiv">
+        <div class="todayP">
+          <p>TODAY</p>
+        </div>
+        <div>
+          <button class="todayButton"><i class="fa-solid fa-plus"></i></button>
+        </div>
+      </div>
+
+      <span class="colored-span"></span>
+      <div><p class="complete">33% complete</p></div>
+
+      <div class="listDiv">
+        <button-template></button-template>
+        <list-item name="Meditation"></list-item>
+      </div>
+      <div class="listDiv">
+        <button-template></button-template>
+        <list-item name="Pick up Anna"></list-item>
+      </div>
+      <div class="listDiv">
+        <button-template></button-template>
+        <list-item name="Set up meeting with Jay"></list-item>
+      </div>
+      <div class="listDiv">
+        <button-template></button-template>
+        <list-item name="Finish Daily Ui"></list-item>
+      </div>
+      <div class="listDiv">
+        <button-template></button-template>
+        <list-item name="Second edits on article"></list-item>
+      </div>
+      <div class="listDiv">
+        <button-template></button-template>
+        <list-item name="Email Chris"></list-item>
+      </div>
+      <p class="pull">Pull from recurring lists</p>
+      <div id="recurringDiv">
+        <recurring-button name="Daily"></recurring-button>
+        <recurring-button name="Weekly"></recurring-button>
+        <recurring-button name="Monthly"></recurring-button>
+        <recurring-button name="Occasional"></recurring-button>
+      </div>
+    </div>
+    <script src="src/button.js"></script>
+    <script src="src/index.js"></script>
+    <script src="src/recurring.js"></script>
+  </body>
+</html>
